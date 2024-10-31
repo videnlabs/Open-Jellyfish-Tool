@@ -93,6 +93,7 @@ namespace JellyfishTool.Services {
             }
 
             JsonContent payload = JsonContent.Create(model);
+            Console.WriteLine(JsonContent);
 
             //Prepare client
             using HttpClient client = clientFactory.GetAuthenticatedClient();
